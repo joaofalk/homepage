@@ -1,6 +1,5 @@
-import { Text, useColorModeValue } from '@chakra-ui/react'
+import { Text, useColorModeValue, Image } from '@chakra-ui/react'
 import styled from '@emotion/styled'
-import Image from 'next/image'
 import Link from 'next/link'
 import footPrintImg from '../public/images/footprint.png'
 
@@ -19,13 +18,13 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  // const footPrintImg = `/public/images/footprint${useColorModeValue('', '-dark')}.png`
-  // console.log(footPrintImg)
+  // const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
+  const footPrintImg = `/images/footprint.png`
   return (
     <Link href="/">
       <a>
         <LogoBox>
-          <Image src={footPrintImg} width={20} height={20} alt="logo" />
+          <Image src={footPrintImg} width={5} height={5} alt="logo" />
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily="M PLUS Rounded 1c"
