@@ -23,14 +23,14 @@ const Page = () => {
         mb={6}
         align="center"
       >
-        Hello, I'm a full-stack developer based in Brazil
+        Lorem ipsum dolor sit amet, consectetur adipiscing.
       </Box>
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            João Falk
+            Your Name
           </Heading>
-          <p>Full-Stack Developer</p>
+          <p>Lorem ipsum dolor.</p>
         </Box>
         <Box
           flexShrink={0}
@@ -77,8 +77,33 @@ const Page = () => {
         </Heading>
         <BioSection>
           <BioYear>1999</BioYear>
-          Born in Florianópolis, SC - Brazil
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+          suscipit.
         </BioSection>
+        <BioSection>
+          <BioYear>2017</BioYear>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          non.
+        </BioSection>
+        <BioSection>
+          <BioYear>2020</BioYear>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+          fermentum.
+        </BioSection>
+        <BioSection>
+          <BioYear>2021</BioYear>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ipsum.
+        </BioSection>
+      </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title" mb={3}>
+          I ♥
+        </Heading>
+        <Paragraph>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          turpis arcu, congue eu mauris eget, commodo viverra ligula. Donec
+          magna sem, tincidunt eu molestie sed, egestas non nisl. Duis quam.
+        </Paragraph>
       </Section>
     </Container>
   )
