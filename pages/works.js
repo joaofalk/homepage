@@ -12,13 +12,13 @@ const Works = () => {
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A markdown note-taking app
+          <WorkGridItem id="ipsum" title="Lorem" thumbnail={thumbInkdrop}>
+            Lorem ipsum dolor sis amet.
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A markdown note-taking app
+          <WorkGridItem id="ipsum" title="Ipsum" thumbnail={thumbInkdrop}>
+            Lorem ipsum dolor sis amet.
           </WorkGridItem>
         </Section>
         <Section delay={0.4}>
@@ -27,8 +27,8 @@ const Works = () => {
             Old works
           </Heading>
           <Section delay={0.4}>
-            <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-              A markdown note-taking app
+            <WorkGridItem id="dolor" title="Dolor" thumbnail={thumbInkdrop}>
+              Lorem ipsum dolor sis amet.
             </WorkGridItem>
           </Section>
         </Section>
