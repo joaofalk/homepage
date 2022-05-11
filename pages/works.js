@@ -14,7 +14,7 @@ const Works = () => {
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.3}>
-            <WorkGridItem id="ipsum" title="Lorem" thumbnail={thumbInkdrop}>
+            <WorkGridItem id="lorem" title="Lorem" thumbnail={thumbInkdrop}>
               Lorem ipsum dolor sis amet.
             </WorkGridItem>
           </Section>
