@@ -4,8 +4,12 @@ import {
   Button,
   Container,
   Heading,
+  Icon,
   Image,
   Link,
+  List,
+  ListItem,
+  SimpleGrid,
   useColorModeValue
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
@@ -13,6 +17,14 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
+import {
+  IoLogoGithub,
+  IoLogoInstagram,
+  IoLogoTwitter,
+  IoLogoDiscord
+} from 'react-icons/io5'
+import { GridItem } from '../components/grid-item'
+import flower from '../public/images/flower.jpg'
 
 const Page = () => {
   return (
@@ -106,6 +118,67 @@ const Page = () => {
             turpis arcu, congue eu mauris eget, commodo viverra ligula. Donec
             magna sem, tincidunt eu molestie sed, egestas non nisl. Duis quam.
           </Paragraph>
+        </Section>
+
+        <Section delay={0.3}>
+          <Heading as="h3" variant="section-title">
+            On the web
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @github
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://instagram.com" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoInstagram} />}
+                >
+                  @instagram
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://twitter.com" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoTwitter} />}
+                >
+                  @twitter
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://discord.com" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoDiscord} />}
+                >
+                  @discord
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
+          <SimpleGrid columns={[1, 2, 3]} gap={6}>
+            <GridItem
+              href="https://youtube.com"
+              title="Youtube"
+              thumbnail={flower}
+            >
+              Youtube
+            </GridItem>
+          </SimpleGrid>
         </Section>
       </Container>
     </Layout>
