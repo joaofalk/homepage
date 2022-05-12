@@ -31,7 +31,7 @@ const Logo = () => {
             fontWeight="bold"
             ml={3}
           >
-            João Falk
+            Lorem Ipsum
           </Text>
         </LogoBox>
       </a>
